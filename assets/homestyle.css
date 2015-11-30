@@ -8,18 +8,241 @@ a {
 body {
     font-family: 'Roboto Condensed', sans-serif;
     margin: 0px;
-    background: #800909;
+    background: #edeae5;
+}
+
+ul {
+	text-align: center;
 }
 
 
 /* Navbar */
 #navbar-container {
+	position: fixed;
+	display: inline-block;
 	background: white;
 	width: 100%;
 	height: 50px;
+	z-index: 100;
 }
 
 #navbar li {
 	display: inline-block;
+	margin-right: 100px;
+	margin-left: 100px;
 }
 
+#navbar li:hover {
+	color: #800909;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	transition: 0.2s;
+}
+
+/** Center slide */
+#center-container {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 600px;
+}
+
+#center-image1 { /* Chance this image */
+	position: absolute;
+	background-image: url('UCBerkeleyCampus.jpg');
+	background-size: 100%;
+	height: 100%;
+	width: 100%;
+	z-index: 5;
+	/*display: none;*/
+}
+
+#center-image2 { /* Chance this image */
+	position: absolute;
+	background-image: url('background.jpg');
+	background-size: 100%;
+	height: 100%;
+	width: 100%;
+	z-index: 5;
+	display: none;
+}
+
+#center-image3 { /* Chance this image */
+	position: absolute;
+	background-image: url('background.jpg');
+	background-size: 100%;
+	height: 100%;
+	width: 100%;
+	z-index: 5;
+	display: none;
+}
+
+#center-image-overlay {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	z-index: 10;
+}
+
+#center-image-caption-container {
+	position: absolute;
+    text-align: center;
+    width: 500px;
+    height: 125px;
+    top: 50%;
+    left: 50%;
+    margin: -62.5 0 0 -250px;
+    z-index: 15;
+}
+
+#center-caption1 { /* Chance this font */
+	position: absolute;
+    text-align: center;
+    width: 500px;
+    height: 125px;
+    top: 50%;
+    left: 50%;
+    margin: -62.5 0 0 -250px;
+    color: white;
+    font-weight: bold;
+    font-size: 100px;
+    z-index: 15;
+}
+
+#center-caption2 { /* Chance this font */
+	position: absolute;
+    text-align: center;
+    width: 500px;
+    height: 125px;
+    top: 50%;
+    left: 50%;
+    margin: -62.5 0 0 -250px;
+    color: white;
+    font-weight: bold;
+    font-size: 100px;
+    z-index: 15;
+    display: none;
+}
+
+#center-caption3 { /* Chance this font */
+	position: absolute;
+    text-align: center;
+    width: 500px;
+    height: 125px;
+    top: 50%;
+    left: 50%;
+    margin: -62.5 0 0 -250px;
+    color: white;
+    font-weight: bold;
+    font-size: 100px;
+    z-index: 15;
+    display: none;
+}
+
+#left-arrow-container {
+	position: absolute;
+	height: 50;
+	width: 50;
+	padding-top: 300px;
+	padding-bottom: 300px;
+	margin: -25 0 0 0;
+	z-index: 15;
+}
+
+#left-arrow { /* Change pic */
+	background: url('left-arrow.png');
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+
+#left-arrow-container:hover {
+	opacity: 0.6;
+	cursor: pointer;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	transition: 0.2s;
+}
+
+#right-arrow-container {
+	position: absolute;
+	height: 50;
+	width: 50;
+	right: 0;
+	padding-top: 300px;
+	padding-bottom: 300px;
+	margin: -25 0 0 0;
+	z-index: 15;
+}
+
+#right-arrow { /* Change pic */
+	background: url('right-arrow.png');
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+
+#right-arrow-container:hover {
+	opacity: 0.6;
+	cursor: pointer;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	transition: 0.2s;
+}
+
+/* Main text */
+#main-container {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	margin-top: 10px;
+	width: 100%;
+	height: 1200px;
+	z-index: 50;
+}
+
+/* Footer */
+#footer-container {
+	position: absolute;
+	width: 100%;
+	height: 250px;
+	margin-bottom: 0;
+	background-color: black;
+}
+
+#name-motto-container {
+    position: absolute;
+    text-align: center;
+    width: 450px;
+    height: 125px;
+    top: 10%;
+    left: 50%;
+    margin: 0 0 0 -225px;
+    z-index: 15;
+}
+
+#name {
+    color: white;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+#motto {
+    color: white;
+    font-size: 26px;
+    font-family: 'Bad Script', cursive;
+}
+
+#icon-container {
+	position: absolute;
+	height: 64;
+	width: 500px;
+	top: 50%;
+	left: 50%;
+	margin: 0 0 0 -250px;
+	background-color: white;
+	z-index: 15;
+}

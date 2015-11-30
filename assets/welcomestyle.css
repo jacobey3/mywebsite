@@ -21,7 +21,6 @@ body {
     position: absolute;
     background-image: url('background.jpg');
     background-size: 100% 100%;
-    overflow: hidden;
     height: 100%;
     width: 100%;
     z-index: 5;
@@ -82,7 +81,7 @@ body {
 #welcome {
     color: white;
     font-size: 40px;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     font-weight: bold;
 }
 
