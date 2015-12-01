@@ -8,32 +8,36 @@ a {
 body {
     font-family: 'Roboto Condensed', sans-serif;
     margin: 0px;
-    background: #edeae5;
+    background: white;
 }
-
-ul {
-	text-align: center;
-}
-
 
 /* Navbar */
 #navbar-container {
 	position: fixed;
 	display: inline-block;
-	background: white;
+	background: #3C869E;
 	width: 100%;
 	height: 50px;
 	z-index: 100;
 }
 
+#navbar ul {
+	position: absolute;
+	padding: 0px;
+	margin: 0px;
+	top: calc(50% - 9.5px);
+	left: calc(50% - 185.75px);
+}
+
 #navbar li {
 	display: inline-block;
-	margin-right: 100px;
-	margin-left: 100px;
+	color: white;
+	margin-right: 60px;
+	margin-left: 60px;
 }
 
 #navbar li:hover {
-	color: #800909;
+	opacity: 0.6;
 	-webkit-transition: 0.2s;
 	-moz-transition: 0.2s;
 	transition: 0.2s;
@@ -54,27 +58,24 @@ ul {
 	height: 100%;
 	width: 100%;
 	z-index: 5;
-	/*display: none;*/
 }
 
 #center-image2 { /* Chance this image */
 	position: absolute;
-	background-image: url('background.jpg');
+	background-image: url('friends.jpg');
 	background-size: 100%;
 	height: 100%;
 	width: 100%;
 	z-index: 5;
-	display: none;
 }
 
 #center-image3 { /* Chance this image */
 	position: absolute;
-	background-image: url('background.jpg');
+	background-image: url('son.jpg');
 	background-size: 100%;
 	height: 100%;
 	width: 100%;
 	z-index: 5;
-	display: none;
 }
 
 #center-image-overlay {
@@ -86,59 +87,43 @@ ul {
 	z-index: 10;
 }
 
-#center-image-caption-container {
+#center-caption1 { /* Change this font */
 	position: absolute;
-    text-align: center;
+	text-align: center;
     width: 500px;
     height: 125px;
-    top: 50%;
-    left: 50%;
-    margin: -62.5 0 0 -250px;
-    z-index: 15;
-}
-
-#center-caption1 { /* Chance this font */
-	position: absolute;
-    text-align: center;
-    width: 500px;
-    height: 125px;
-    top: 50%;
-    left: 50%;
-    margin: -62.5 0 0 -250px;
+    top: calc(50% - 62.5px);
+	left: calc(50% - 250px);
     color: white;
     font-weight: bold;
     font-size: 100px;
     z-index: 15;
 }
 
-#center-caption2 { /* Chance this font */
+#center-caption2 { /* Change this font */
 	position: absolute;
-    text-align: center;
+	text-align: center;
     width: 500px;
     height: 125px;
-    top: 50%;
-    left: 50%;
-    margin: -62.5 0 0 -250px;
+    top: calc(50% - 62.5px);
+	left: calc(50% - 250px);
     color: white;
     font-weight: bold;
     font-size: 100px;
     z-index: 15;
-    display: none;
 }
 
-#center-caption3 { /* Chance this font */
+#center-caption3 { /* Change this font */
 	position: absolute;
-    text-align: center;
+	text-align: center;
     width: 500px;
     height: 125px;
-    top: 50%;
-    left: 50%;
-    margin: -62.5 0 0 -250px;
+    top: calc(50% - 62.5px);
+	left: calc(50% - 250px);
     color: white;
     font-weight: bold;
     font-size: 100px;
     z-index: 15;
-    display: none;
 }
 
 #left-arrow-container {
@@ -199,8 +184,65 @@ ul {
 	text-align: center;
 	margin-top: 10px;
 	width: 100%;
-	height: 1200px;
+	height: 800px;
 	z-index: 50;
+}
+
+#main-text-header1 {
+	position: absolute;
+	text-align: center;
+	width: 800px;
+	height: 70px;
+	left: 50%;
+	margin: 20 0 0 -400;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#main-text-header2 {
+	position: absolute;
+	text-align: center;
+	width: 800px;
+	height: 70px;
+	left: 50%;
+	margin: 20 0 0 -400;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#main-text-header3 {
+	position: absolute;
+	text-align: center;
+	width: 800px;
+	height: 70px;
+	left: 50%;
+	margin: 20 0 0 -400;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#main-text1 {
+	position: absolute;
+	width: 700px;
+	height: 740px;
+	left: 50%;
+	margin: 90 0 0 -350;
+}
+
+#main-text2 {
+	position: absolute;
+	width: 700px;
+	height: 740px;
+	left: 50%;
+	margin: 90 0 0 -350;
+}
+
+#main-text3 {
+	position: absolute;
+	width: 700px;
+	height: 740px;
+	left: 50%;
+	margin: 90 0 0 -350;
 }
 
 /* Footer */
@@ -209,7 +251,7 @@ ul {
 	width: 100%;
 	height: 250px;
 	margin-bottom: 0;
-	background-color: black;
+	background-color: #3C869E;
 }
 
 #name-motto-container {
@@ -217,17 +259,10 @@ ul {
     text-align: center;
     width: 450px;
     height: 125px;
-    top: 10%;
+    top: 17%;
     left: 50%;
     margin: 0 0 0 -225px;
     z-index: 15;
-}
-
-#name {
-    color: white;
-    font-size: 40px;
-    letter-spacing: 5px;
-    font-weight: bold;
 }
 
 #motto {
@@ -236,13 +271,80 @@ ul {
     font-family: 'Bad Script', cursive;
 }
 
-#icon-container {
+#icon-section {
 	position: absolute;
-	height: 64;
+	height: 32;
 	width: 500px;
 	top: 50%;
 	left: 50%;
 	margin: 0 0 0 -250px;
-	background-color: white;
 	z-index: 15;
+}
+
+#icon-section li {
+	display: inline-block;
+}
+
+#icon-section ul {
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.icon-container {
+	width: 32px;
+	height: 32px;
+}
+
+#email {
+	background-image: url("email.png");
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+
+#linkedin {
+	background-image: url("linkedin.png");
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+
+#github {
+	background-image: url("github.png");
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+
+#facebook {
+	background-image: url("facebook.png");
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+
+#instagram {
+	background-image: url("instagram.png");
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+
+.icon-container:hover {
+	opacity: 0.4;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	transition: 0.2s;
+}
+
+/** JQuery manipulation */
+.active {
+	display: block;
+}
+
+.inactive {
+	display: none;
 }
