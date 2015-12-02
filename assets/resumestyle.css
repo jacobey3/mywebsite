@@ -66,6 +66,26 @@ ul {
 	margin: 130 0 0 -350;
 }
 
+/** Scrolltop */
+#scrolltop-container {
+	position: absolute;
+	width: 40px;
+	height: 25px;
+	right: 5%;
+	bottom: 10%;
+}
+
+#scrolltop {
+	background: url('up-arrow.png');
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+
+#scrolltop-container:hover {
+	cursor: pointer;
+}
+
 /* Footer */
 #footer-container {
 	position: absolute;
