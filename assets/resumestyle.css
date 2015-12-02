@@ -1,0 +1,163 @@
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0px;
+    background: white;
+}
+
+ul {
+	text-align: center;
+}
+
+/* Navbar */
+#navbar-container {
+	position: fixed;
+	display: inline-block;
+	background: #3C869E;
+	width: 100%;
+	height: 50px;
+	z-index: 100;
+}
+
+#navbar li {
+	display: inline-block;
+	color: white;
+	margin-right: 60px;
+	margin-left: 60px;
+}
+
+#navbar li:hover {
+	opacity: 0.6;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	transition: 0.2s;
+}
+
+/* Main text */
+#main-container {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	margin-top: 10px;
+	width: 100%;
+	height: 800px;
+	z-index: 50;
+}
+
+#main-text-header {
+	position: absolute;
+	width: 700px;
+	height: 70px;
+	left: 50%;
+	margin: 60 0 0 -350;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+#main-text {
+	position: absolute;
+	width: 700px;
+	height: 670px;
+	left: 50%;
+	margin: 130 0 0 -350;
+}
+
+/* Footer */
+#footer-container {
+	position: absolute;
+	width: 100%;
+	height: 250px;
+	margin-bottom: 0;
+	background-color: #3C869E;
+}
+
+#name-motto-container {
+    position: absolute;
+    text-align: center;
+    width: 450px;
+    height: 125px;
+    top: 17%;
+    left: 50%;
+    margin: 0 0 0 -225px;
+    z-index: 15;
+}
+
+#motto {
+    color: white;
+    font-size: 26px;
+    font-family: 'Bad Script', cursive;
+}
+
+#icon-section {
+	position: absolute;
+	height: 32;
+	width: 500px;
+	top: 50%;
+	left: 50%;
+	margin: 0 0 0 -250px;
+	z-index: 15;
+}
+
+#icon-section li {
+	display: inline-block;
+}
+
+#icon-section ul {
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.icon-container {
+	width: 32px;
+	height: 32px;
+}
+
+#email {
+	background-image: url("email.png");
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+
+#linkedin {
+	background-image: url("linkedin.png");
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+
+#github {
+	background-image: url("github.png");
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+
+#facebook {
+	background-image: url("facebook.png");
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+
+#instagram {
+	background-image: url("instagram.png");
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+
+.icon-container:hover {
+	opacity: 0.4;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	transition: 0.2s;
+}
+
