@@ -4,6 +4,11 @@ $(document).ready(function(){
 		$("html, body").animate({scrollTop: 0}, "slow");
 	});
 
+	// $("#scrolldown-container").click(function() {
+	// 	$('html, body').animate({scrollTop: target.offset().top}, 1000);
+	// });
+
+
 	// $("#center-image-overlay").hover(function() {
 	// 	if ($("#center-image1").hasClass("active")) {
 	// 		$("#right-arrow-container").removeClass("inactive");

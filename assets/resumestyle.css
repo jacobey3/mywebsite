@@ -17,7 +17,8 @@ ul {
 #navbar-container {
 	position: fixed;
 	display: inline-block;
-	background: #3C869E;
+	/*background: #3C869E;*/
+	background: black;
 	width: 100%;
 	height: 50px;
 	z-index: 100;
@@ -92,7 +93,8 @@ ul {
 	width: 100%;
 	height: 250px;
 	margin-bottom: 0;
-	background-color: #3C869E;
+	/*background-color: #3C869E;*/
+	background-color: black;
 }
 
 #name-motto-container {
